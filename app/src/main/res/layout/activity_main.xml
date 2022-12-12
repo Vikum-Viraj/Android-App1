@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E65DDDD9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LblTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Topic"
+        android:textAlignment="center"
+        android:textColor="#1B1414"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/LblInputNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/LblInputNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/inputHint"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#0E0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/Calc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblTopic"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcAge"
+        android:text="@string/BtnName"
+        app:layout_constraintBottom_toTopOf="@+id/LblAnswer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblInputNum"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/LblAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAnswer"
+        android:textColor="#090606"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calc"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
